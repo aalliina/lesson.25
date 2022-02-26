@@ -1,42 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <input id="userInput" placeholder="0">
-            <br>
-            <button class="btn" onclick="press(1)">1</button>
-            <button class="btn" onclick="press(2)">2</button>
-            <button class="btn" onclick="press(3)">3</button>
-            <button class="btn" onclick="press('+')">+</button>
-            <br>
-            <button class="btn" onclick="press(4)">4</button>
-            <button class="btn" onclick="press(5)">5</button>
-            <button class="btn" onclick="press(6)">6</button>
-            <button class="btn" onclick="press('-')">-</button>
-            <br>
-            <button class="btn" onclick="press(7)">7</button>
-            <button class="btn" onclick="press(8)">8</button>
-            <button class="btn" onclick="press(9)">9</button>
-            <button class="btn" onclick="press('*')">*</button>
-            <br>
-            <button class="btn" onclick="press('.')">.</button>
-            <button class="btn" onclick="press(0)">0</button>
-            <button class="btn" onclick="erase()">C</button>
-            <button class="btn" onclick="press('/')">/</button>
-            <br>
-            <button class="btn1" onclick="equal()">=</button>
-        </div>
-    </div>
+ 
+<div id="accordion">  
+  <h3>программирование и создание сайтов</h3>
+    <div>
+    <p>Программи́рование — процесс создания компьютерных программ. По выражению одного из основателей языков программирования Никлауса Вирта, «Программы = алгоритмы + структуры данных». Программирование основывается на использовании языков программирования, на которых записываются исходные тексты программ.
+    </p>
+    <p>Веб-разработка — процесс создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.
+    </p>
+  </div>
+  <h3>языки программирования</h3>
+  <div>
+      <li>python</li>
+      <li>java</li>
+      <li>c++</li>
+  </div>
+  <h3>язык разметки</h3>
+  <div>
+    <p>
+        HTML — стандартизированный язык разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора
+    </p>
+  </div>
+  <h3>язык  стилей</h3>
+  <div>
+    <p>
+        CSS — формальный язык описания внешнего вида документа, написанного с использованием языка разметки. 
+    </p>
+  </div>
 
-   
+</div>
+ 
+ 
 </body>
 </html>
